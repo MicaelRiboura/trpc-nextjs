@@ -6,7 +6,7 @@ connectDB();
 
 export const appRouter = t.router({
     getHello: t.procedure.query(async ({ ctx }) => {
-        const message = await redisClient.get('trpc');
+        const message = await redisClient.get('tRPC');
         return  { message };
     }),
 });
