@@ -224,12 +224,51 @@
   dependencies:
     tslib "^2.4.0"
 
+"@tanstack/match-sorter-utils@8.1.1":
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/match-sorter-utils/-/match-sorter-utils-8.1.1.tgz#895f407813254a46082a6bbafad9b39b943dc834"
+  integrity sha512-IdmEekEYxQsoLOR0XQyw3jD1GujBpRRYaGJYQUw1eOT1eUugWxdc7jomh1VQ1EKHcdwDLpLaCz/8y4KraU4T9A==
+  dependencies:
+    remove-accents "0.4.2"
+
+"@tanstack/query-core@4.15.1":
+  version "4.15.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.15.1.tgz#a282f04fe5e612b50019e1cfaf0efabd220e00ce"
+  integrity sha512-+UfqJsNbPIVo0a9ANW0ZxtjiMfGLaaoIaL9vZeVycvmBuWywJGtSi7fgPVMCPdZQFOzMsaXaOsDtSKQD5xLRVQ==
+
+"@tanstack/react-query-devtools@^4.16.1":
+  version "4.16.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-4.16.1.tgz#38511e300b982607b841ae9e713e2280ffc23519"
+  integrity sha512-VrDYLmG+OOcvGSZL5avG4R8jhqeMFP7pzW2sh2BWEV9UfI+aocG+CW8y8ygacxuKy48m8Tyo/xfe8H1z9BGb+g==
+  dependencies:
+    "@tanstack/match-sorter-utils" "8.1.1"
+    superjson "^1.10.0"
+    use-sync-external-store "^1.2.0"
+
+"@tanstack/react-query@^4.16.1":
+  version "4.16.1"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.16.1.tgz#077006b8eb2c87fbe8d1597c1a0083a2d218b791"
+  integrity sha512-PDE9u49wSDykPazlCoLFevUpceLjQ0Mm8i6038HgtTEKb/aoVnUZdlUP7C392ds3Cd75+EGlHU7qpEX06R7d9Q==
+  dependencies:
+    "@tanstack/query-core" "4.15.1"
+    use-sync-external-store "^1.2.0"
+
+"@trpc/client@^10.0.0-rc.5":
+  version "10.0.0-rc.5"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.0.0-rc.5.tgz#df304278927fce3805e080f491af507744a14d64"
+  integrity sha512-+wVbec1UYCk4L3Z8XihkmOjeHN36HE+Ur4uKVR1DlA/9yUlxC2j/YIuhLN0mMiqGezVsMWNE/vCckVWAiRGN5w==
+
 "@trpc/next@^10.0.0-rc.5":
   version "10.0.0-rc.5"
   resolved "https://registry.yarnpkg.com/@trpc/next/-/next-10.0.0-rc.5.tgz#831b25a7523d8bdd2914a5443abf096d851a9c76"
   integrity sha512-icP9MV8gnvS1qGipwmOGi7CU/Hj6Y2sEOaJRw1N9LgsalQB2yCR53Q2IA/S+H7jnlvyFQTCyHwmnBinjhTbA+w==
   dependencies:
     react-ssr-prepass "^1.5.0"
+
+"@trpc/react-query@^10.0.0-rc.5":
+  version "10.0.0-rc.5"
+  resolved "https://registry.yarnpkg.com/@trpc/react-query/-/react-query-10.0.0-rc.5.tgz#231eb682234371cec7ae5116a1b4e1a55bc56a14"
+  integrity sha512-i18VFsaHIVdlAaLM7Hg75xRC9mAd0bYTyFC8chjIMWWmD2G+a6DbwWxxjM5fLkn05eiPBtxcGTW2Q5eCcWtlOA==
 
 "@trpc/server@^10.0.0-rc.5":
   version "10.0.0-rc.5"
@@ -1905,6 +1944,11 @@ regexpp@^3.2.0:
   resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-3.2.0.tgz#0425a2768d8f23bad70ca4b90461fa2f1213e1b2"
   integrity sha512-pq2bWo9mVD43nbts2wGv17XLiNLya+GklZ8kaDLV2Z08gDCsGpnKn9BFMepvWuHCbyVvY7J5o5+BVvoQbmlJLg==
 
+remove-accents@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/remove-accents/-/remove-accents-0.4.2.tgz#0a43d3aaae1e80db919e07ae254b285d9e1c7bb5"
+  integrity sha512-7pXIJqJOq5tFgG1A2Zxti3Ht8jJF337m4sowbuHsW30ZnkQFnDzy9qBNhgzX8ZLW4+UBcXiiR7SwR6pokHsxiA==
+
 resolve-from@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
@@ -2067,7 +2111,7 @@ styled-jsx@5.1.0:
   dependencies:
     client-only "0.0.1"
 
-superjson@^1.11.0:
+superjson@^1.10.0, superjson@^1.11.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/superjson/-/superjson-1.11.0.tgz#f6e2ae0d8fbac61c3fca09ab6739ac9678414d1b"
   integrity sha512-6PfAg1FKhqkwWvPb2uXhH4MkMttdc17eJ91+Aoz4s1XUEDZFmLfFx/xVA3wgkPxAGy5dpozgGdK6V/n20Wj9yg==
@@ -2093,6 +2137,11 @@ synckit@^0.8.4:
   dependencies:
     "@pkgr/utils" "^2.3.1"
     tslib "^2.4.0"
+
+tailwind-merge@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/tailwind-merge/-/tailwind-merge-1.8.0.tgz#41c4730b2a51ca7a905c6beebcbfe237bfb61f30"
+  integrity sha512-tER/2SbYRdfPYg6m4pDWZSlbymLTmDi+dx4iCsJmgmz4UDGzgnVelOvBe3GNtGCw9Bmc4MiObfJJbKeVL+KnMQ==
 
 tailwindcss@^3.2.4:
   version "3.2.4"
@@ -2217,7 +2266,7 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-use-sync-external-store@1.2.0:
+use-sync-external-store@1.2.0, use-sync-external-store@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
   integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
